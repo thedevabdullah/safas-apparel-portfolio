@@ -307,92 +307,12 @@
                 <h4 class="section-title">Our Products</h4>
                 <h1 class="display-5 mb-4">Products</h1>
             </div>
+            <div class="row g-0 team-items" id="randomProducts">
+                <!-- Products will be dynamically inserted here -->
+            </div>
             <div class="row g-0 team-items">
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item position-relative">
-                        <div class="position-relative">
-                            <img class="img-fluid" src="img/products/1.png" alt="">
-                            <!-- <div class="team-social text-center">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
-                            </div> -->
-                        </div>
-                        <!-- <div class="bg-light text-center p-4"> -->
-                            <!-- <h3 class="mt-2">Product Name</h3> -->
-                            <!-- <span class="text-primary">Designation</span> -->
-                        <!-- </div> -->
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item position-relative">
-                        <div class="position-relative">
-                            <img class="img-fluid" src="img/products/2.png" alt="">
-                        </div>
-                        <!-- <div class="bg-light text-center p-4"> -->
-                            <!-- <h3 class="mt-2">Product Name</h3> -->
-                        <!-- </div> -->
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item position-relative">
-                        <div class="position-relative">
-                            <img class="img-fluid" src="img/products/3.png" alt="">
-                        </div>
-                        <!-- <div class="bg-light text-center p-4"> -->
-                            <!-- <h3 class="mt-2">Product Name</h3> -->
-                        <!-- </div> -->
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item position-relative">
-                        <div class="position-relative">
-                            <img class="img-fluid" src="img/products/4.png" alt="">
-                        </div>
-                        <!-- <div class="bg-light text-center p-4"> -->
-                            <!-- <h3 class="mt-2">Product Name</h3> -->
-                        <!-- </div> -->
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item position-relative">
-                        <div class="position-relative">
-                            <img class="img-fluid" src="img/products/5.png" alt="">
-                        </div>
-                        <!-- <div class="bg-light text-center p-4"> -->
-                            <!-- <h3 class="mt-2">Product Name</h3> -->
-                        <!-- </div> -->
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item position-relative">
-                        <div class="position-relative">
-                            <img class="img-fluid" src="img/products/6.png" alt="">
-                        </div>
-                        <!-- <div class="bg-light text-center p-4"> -->
-                            <!-- <h3 class="mt-2">Product Name</h3> -->
-                        <!-- </div> -->
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item position-relative">
-                        <div class="position-relative">
-                            <img class="img-fluid" src="img/products/7.png" alt="">
-                        </div>
-                        <!-- <div class="bg-light text-center p-4"> -->
-                            <!-- <h3 class="mt-2">Product Name</h3> -->
-                        <!-- </div> -->
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item position-relative">
-                        <div class="position-relative">
-                            <img class="img-fluid" src="img/products/8.png" alt="">
-                        </div>
-                        <!-- <div class="bg-light text-center p-4"> -->
-                            <!-- <h3 class="mt-2">Product Name</h3> -->
-                        <!-- </div> -->
-                    </div>
+                <div class="col-lg-12 text-center mt-5">
+                    <a href="products.html" class="btn btn-lg btn-primary" style="width: 250px; background-color: #008E36;">View All Products</a>
                 </div>
             </div>
         </div>
@@ -617,6 +537,71 @@
                     customLoader.style.display = 'none';
                 }, 800); // Match this with the CSS transition duration
             }, 4500);
+        });
+    </script>
+
+    <!-- Add this before the closing body tag -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Array of all product images
+            const allProducts = [
+                { src: 'img/products/1.png', alt: 'Product 1' },
+                { src: 'img/products/2.png', alt: 'Product 2' },
+                { src: 'img/products/3.png', alt: 'Product 3' },
+                { src: 'img/products/4.png', alt: 'Product 4' },
+                { src: 'img/products/5.png', alt: 'Product 5' },
+                { src: 'img/products/6.png', alt: 'Product 6' },
+                { src: 'img/products/7.png', alt: 'Product 7' },
+                { src: 'img/products/8.png', alt: 'Product 8' },
+                { src: 'img/products/9.png', alt: 'Product 9' },
+                { src: 'img/products/10.png', alt: 'Product 10' },
+                { src: 'img/products/11.png', alt: 'Product 11' },
+                { src: 'img/products/12.png', alt: 'Product 12' },
+                { src: 'img/products/13.png', alt: 'Product 13' },
+                { src: 'img/products/14.png', alt: 'Product 14' },
+                { src: 'img/products/15.png', alt: 'Product 15' },
+                { src: 'img/products/16.png', alt: 'Product 16' },
+                { src: 'img/products/17.png', alt: 'Product 17' },
+                { src: 'img/products/18.png', alt: 'Product 18' },
+                { src: 'img/products/19.png', alt: 'Product 19' },
+                { src: 'img/products/20.png', alt: 'Product 20' },
+                { src: 'img/products/21.png', alt: 'Product 21' },
+                { src: 'img/products/22.png', alt: 'Product 22' },
+                { src: 'img/products/23.png', alt: 'Product 23' },
+                { src: 'img/products/24.png', alt: 'Product 24' },
+            ];
+
+            // Function to shuffle array
+            function shuffleArray(array) {
+                for (let i = array.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [array[i], array[j]] = [array[j], array[i]];
+                }
+                return array;
+            }
+
+            // Get random 8 products
+            const randomProducts = shuffleArray([...allProducts]).slice(0, 8);
+
+            // Get the container
+            const productsContainer = document.getElementById('randomProducts');
+
+            // Create and append product elements
+            randomProducts.forEach(product => {
+                const productDiv = document.createElement('div');
+                productDiv.className = 'col-lg-3 col-md-6 wow fadeInUp';
+                productDiv.setAttribute('data-wow-delay', '0.1s');
+                
+                productDiv.innerHTML = `
+                    <div class="team-item position-relative">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="${product.src}" alt="${product.alt}">
+                        </div>
+                    </div>
+                `;
+                
+                productsContainer.appendChild(productDiv);
+            });
         });
     </script>
 </body>

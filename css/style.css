@@ -406,6 +406,7 @@ h6,
     padding: .75rem;
     border: 2px solid #008E36;
     margin: 28px;
+    height: 480px;
 }
 
 .product-item::after {

@@ -91,6 +91,42 @@
                 opacity: 1;
             }
         }
+
+        /* Responsive styles for tablets */
+        @media screen and (max-width: 991px) {
+            .loader-logo {
+                width: 120px;
+                margin-bottom: 1.5rem;
+            }
+
+            .typing-text {
+                font-size: 3rem;
+            }
+        }
+
+        /* Responsive styles for mobile devices */
+        @media screen and (max-width: 576px) {
+            .loader-logo {
+                width: 100px;
+                margin-bottom: 1rem;
+            }
+
+            .typing-text {
+                font-size: 2rem;
+                letter-spacing: 0.15em;
+            }
+
+            @keyframes typing {
+                from {
+                    width: 0;
+                    opacity: 1;
+                }
+                to {
+                    width: 16ch;
+                    opacity: 1;
+                }
+            }
+        }
     </style>
 </head>
 
